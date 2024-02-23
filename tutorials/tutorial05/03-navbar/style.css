@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+* {
+   border-width: 1px;
+   border-style: solid;
+}
+nav, ul {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    margin: 0;
+}
+
+nav {
+  background-color: #7c3b3b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  justify-content: space-between;
+  
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.item-1 {
+    grid-column: 1 / span 3;
+}
+.item-2 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 3;
+}
+
+/* create your child rules here:  */

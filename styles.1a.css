@@ -1,0 +1,127 @@
+/* https://www.w3schools.com/css/css_border_shorthand.asp */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: px;
+    font-family: Arial, sans-serif;
+}
+
+p,
+a,
+li {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+header {
+    display: grid;
+    background-color: rgb(67, 113, 120, 255);
+    grid-template-columns: 25fr 50fr 25fr;
+
+    h1 {
+        grid-column: 2 / span 1;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 328%;
+    }
+
+    h2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5fr 45fr 45fr 5fr;
+
+    font-family: f;
+    margin: 15px;
+    gap: 15px;
+}
+main>section {
+    min-height: 450px;
+}
+#tutorials {
+    background-color: rgb(255, 238, 85);
+    grid-column: 2 / span 1;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+}
+
+#homework {
+    background-color: rgb(85, 238, 255);
+    grid-column: 3 / span 1;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+}
+#quizzes { 
+    background-color: rgb(163, 94, 226);
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+}
+#inspiration {
+    background-color: darkcyan;
+    grid-column: 3 / span 1;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+}
+ul {
+    list-style-type: none;
+}
+/* below is my mobile code */
+@media (max-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: none;
+    }
+    #tutorials {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+    #homework {
+        grid-column: 1 / span 2;
+grid-row: 3 / span 1;
+    }
+    #quizzes {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+    }
+    #inspiration {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+    }
+}

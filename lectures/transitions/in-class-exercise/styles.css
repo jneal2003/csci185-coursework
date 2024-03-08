@@ -24,7 +24,7 @@ body {
     background: #CCC;
 }
 
-/*
+
 #section1 {
     background: #0c7474;
     color: white;
@@ -36,12 +36,20 @@ body {
     width: 220px;
     height: 220px;
 }
-*/
 
 
-/* 
-#section2 { }
-#section2:hover { } 
+
+
+#section2 {
+    background: green;
+    color: purple;
+    transition: all 15s ease-in;
+ }
+
+#section2:hover { 
+    transform: rotate(360000deg);
+} 
+
 #section3 { }
+
 #section3:hover { } 
-*/

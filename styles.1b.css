@@ -1,0 +1,229 @@
+/* https://www.w3schools.com/css/css_border_shorthand.asp 
+https://css-tricks.com/css-link-hover-effects
+chatgpt promt (even tho it didn't help much and I had to troubleshoot myself) - "in css, how can I make a section of my grid bigger when hovered over"
+/*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: px;
+    font-family: Arial, sans-serif;
+}
+
+p,
+a,
+li {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+header {
+    display: grid;
+    background-color: #e97618;
+    grid-template-columns: 25fr 50fr 25fr;
+
+    h1 {
+        grid-column: 2 / span 1;
+        text-align: center;
+        font-family: "Rubik Scribble", system-ui;
+        font-size: 400%;
+        color: rgb(0, 0, 0);
+    }
+
+    h2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5fr 45fr 45fr 5fr;
+
+    font-family: f;
+    margin: 15px;
+    gap: 15px;
+}
+
+main>section {
+    min-height: 450px;
+}
+
+#tutorials {
+    a {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #000000;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+
+    a:hover {
+        box-shadow: inset 250px 0 0 0 #ffffff;
+        color: rgb(0, 0, 0);
+    }
+
+    background-color: #E0AA53;
+    grid-column: 2 / span 1;
+    transition: all 0.3s ease;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+}
+
+#homework:hover {
+    transform: scale(1.2);
+}
+
+#quizzes:hover {
+    transform: scale(1.2);
+}
+
+#inspiration:hover {
+    transform: scale(1.2);
+}
+
+#tutorials:hover {
+    transform: scale(1.2);
+}
+
+#homework {
+    background-color: #E0CC53;
+    grid-column: 3 / span 1;
+    transition: all 0.3s ease;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+
+    a {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #000000;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    }
+
+    a:hover {
+        box-shadow: inset 250px 0 0 0 #ffffff;
+        color: rgb(0, 0, 0);
+
+    }
+
+}
+
+#quizzes {
+    background-color: #E0DD53;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    transition: all 0.3s ease;
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+
+    a {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #000000;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+
+    a:hover {
+        box-shadow: inset 250px 0 0 0 #ffffff;
+        color: rgb(0, 0, 0);
+    }
+}
+
+#inspiration {
+    background-color: #E0BB53;
+    grid-column: 3 / span 1;
+    transition: all 0.3s ease;
+
+
+    ul {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 220%;
+    }
+
+    a {
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #000000;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+
+    a:hover {
+        box-shadow: inset 250px 0 0 0 #ffffff;
+        color: rgb(0, 0, 0);
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2,
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.extra {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* below is my mobile code */
+@media (max-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: none;
+    }
+
+    #tutorials {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    #homework {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+    }
+
+    #quizzes {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+    }
+
+    #inspiration {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+    }
+}

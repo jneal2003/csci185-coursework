@@ -3,6 +3,7 @@ https://css-tricks.com/css-link-hover-effects
 chatgpt promt (even tho it didn't help much and I had to troubleshoot myself) - "in css, how can I make a section of my grid bigger when hovered over"
 /*/
 
+
 * {
     box-sizing: border-box;
 }
@@ -95,6 +96,38 @@ main>section {
 #tutorials:hover {
     transform: scale(1.2);
 }
+#homework img {
+    display:none;
+    
+}
+#homework:hover img {
+    display:block;
+    max-height: 150px;
+}
+#quizzes img {
+    display:none;
+    
+}
+#quizzes:hover img {
+    display:block;
+    max-height: 150px;
+}
+#inspiration img {
+    display:none;
+    
+}
+#inspiration:hover img {
+    display:block;
+    max-height: 150px;
+}
+#tutorials img {
+    display:none;
+    
+}
+#tutorials:hover img {
+    display:block;
+    max-height: 150px;
+}
 
 #homework {
     background-color: #E0CC53;
@@ -124,6 +157,7 @@ main>section {
         color: rgb(0, 0, 0);
 
     }
+    
 
 }
 
@@ -182,6 +216,7 @@ main>section {
     a:hover {
         box-shadow: inset 250px 0 0 0 #ffffff;
         color: rgb(0, 0, 0);
+        
     }
 }
 

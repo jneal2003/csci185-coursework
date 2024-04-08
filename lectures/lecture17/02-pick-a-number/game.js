@@ -9,5 +9,16 @@ console.log(secret);
 
 // Your task:
 function check() {
-    // your code here
+const guess = Number(document.querySelector("#guess").value);
+const messageEl = document.querySelector("#message");
+    if (guess > secret){
+        messageEl.innerHTML = "Too High";}
+    if (guess < secret){
+        messageEl.innerHTML = "Too Low";
+    }
+    if (guess === secret){
+        messageEl.innerHTML= "You Win!!!";
+    }
 }
+const guessNumber = number(document.querySelector("#num_guesses"))
+guessNumber.innerHTML = +1

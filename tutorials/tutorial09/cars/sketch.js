@@ -47,6 +47,7 @@ function draw() {
         c3.x = 1500
     }
     c1.x += c1.speed;
+    c1.y += c1.speed
     c2.x += c2.speed;
     c3.x += c3.speed;
 

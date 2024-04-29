@@ -1,0 +1,33 @@
+#emblems section{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 5px;
+}
+#search {
+    min-width: 250px;
+    min-height: 50px;
+}
+#body h1,h2,h3 {
+    font-size: 18px;
+    padding-left: 15px;
+    min-height: 500px;
+}
+h1 {
+    background-color: blue;
+}
+h2 {
+    background-color: red;
+}
+h3 {
+    background-color: yellowgreen;
+}
+h4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+
+      
+

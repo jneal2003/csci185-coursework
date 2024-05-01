@@ -10,8 +10,8 @@ const baseURL = "https://www.bungie.net/platform";
 const galUrl = `${baseURL}/Destiny/Manifest/InventoryItem/1274330687/`;
 const urlUser = `${baseURL}/User/GetBungieNetUserById/${membershipId}/`;
 const settingsUrl = `${baseURL}/settings`;
+// const defUrl = `${baseURL}/Destiny/Definitions/DestinyInventoryItemDefinition/itemTypeDisplayName`;
 // let shotgun = "https://www.bungie.net/platform/Destiny2/Manifest/{shotgun}/{i}?definitions=true"; ask for help
-const membershipUrl = `https://www.bungie.net/Platform/Destiny2/254/Profile/13608813/LinkedProfiles/?getAllMemberships=true`;
 const accountUrl = `https://www.bungie.net/Platform/Destiny2/3/Profile/13608813/Character/2305843010049764490?components=100%2C102%2C103%2C200%2C201%2C202%2C205%2C300%2C301%2C305%2C307%2C800%2C308%2C310%2C309%2C900%2C1100%2C1200%2C104%2C1000%2C206`;
 const myUrl = `https://www.bungie.net/Platform/Destiny2/3/Profile/4611686018515570423/?components=100%2C102%2C103%2C200%2C201%2C202%2C205%2C300%2C301%2C305%2C307%2C800%2C308%2C310%2C309%2C900%2C1100%2C1200%2C104%2C1000%2C206`
 const characterId1 = "2305843010049764490"
@@ -34,10 +34,11 @@ async function getUser() {
 // }
 
 // async function getMemberships() {
-//     const response = await fetch(membershipUrl, headers);
+//     const response = await fetch(defUrl, headers);
 //     const output = await response.json();
 //     console.log(output);
 // }
+
 // // FIND DIFFERENT LOCATION (NOT RESPONSE>GROUP AVATARS< LOOK IN DIM)
 // async function getSettings() {
 //     const response = await fetch(settingsUrl, headers);

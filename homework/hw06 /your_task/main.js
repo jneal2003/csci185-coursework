@@ -225,6 +225,17 @@ async function getArtist(term) {
     container.innerHTML = snippet; 
     
 };
+function playtrack(trackId) {
+    const template = `
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator" 
+    width="100%" 
+    height="352" 
+    frameBorder="0" 
+    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
+        document.querySelector("#artist").innerHTML = template ;
+        
+}
 
 
 document.querySelector('#search').onkeyup = function (ev) {
